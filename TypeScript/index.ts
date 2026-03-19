@@ -80,18 +80,46 @@
 
 // Array Creating in Typescript 
 
-const nums: number[] = [1,3];
-const str: string[] = ["one", "two", "three"]
-console.log(str);
-console.log(nums);
+// const nums: number[] = [1,3];
+// const str: string[] = ["one", "two", "three"]
+// console.log(str);
+// console.log(nums);
 
-const items: string[] = [];
-items.push("Yash Kumar");
-console.log(items)
+// const items: string[] = [];
+// items.push("Yash Kumar");
+// console.log(items)
 
-const nums1: number[] = [];
+// const nums1: number[] = [];
 
-nums1.push(29);
-nums1.push(47);
+// nums1.push(29);
+// nums1.push(47);
 
-console.log(nums1);
+// console.log(nums1);
+
+
+// function printUser(): {name: string; age:number; location: string}{
+//     return{
+//         name: "Yash Kumar",
+//         age: 29,
+//         location: "Delhi",
+//     };
+// }
+
+// const res = printUser();
+
+// console.log(res)
+
+
+type User = {
+    name: string,
+    age?: number;
+    location: string
+}
+
+const user: User = {
+    name: "Yash Kumar",
+    age: 20,
+    location: "Delhi",
+};
+
+console.log(`Name: ${user.name}, Age: ${user.age}, Location: ${user.location}`);
