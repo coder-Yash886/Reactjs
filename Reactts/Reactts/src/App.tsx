@@ -1,7 +1,11 @@
 //import User from "./components/User"
 
-import AdminInfo from "./components/AdminInfo"
-import UserInfo from "./components/UserInfo"
+import Todo from "./Hooks/useStateHook/Todo"
+//import UserProfile from "./components/UserProfile"
+
+//import AdminInfo from "./components/AdminInfo"
+//import Counter from "./components/Counter"
+//import UserInfo from "./components/UserInfo"
 
 //import Button from "./components/Button"
 
@@ -15,8 +19,14 @@ const App = () => {
     onClick={() => console.log("Clicked")} 
     disabled={false}/> */}
 
-    <UserInfo name="Yash Kumar" city="Bijnor" age={30} gender="Male"/>
-    <AdminInfo name="Admin Dashboard" city="Bijnor" age={40} gender="Male"/>
+    {/* <UserInfo name="Yash Kumar" city="Bijnor" age={30} gender="Male"/>
+    <AdminInfo name="Admin Dashboard" city="Bijnor" age={40} gender="Male"/> */}
+
+    {/* <Counter/> */}
+
+    {/* <UserProfile/> */}
+
+    <Todo/>
 
     </div>
   )
