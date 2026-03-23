@@ -1,6 +1,8 @@
 //import User from "./components/User"
 
-import Todo from "./Hooks/useStateHook/Todo"
+import { Form } from "react-router-dom"
+
+//import Todo from "./components/Todo"
 //import UserProfile from "./components/UserProfile"
 
 //import AdminInfo from "./components/AdminInfo"
@@ -26,7 +28,9 @@ const App = () => {
 
     {/* <UserProfile/> */}
 
-    <Todo/>
+    {/* <Todo/> */}
+
+    <Form/>
 
     </div>
   )
