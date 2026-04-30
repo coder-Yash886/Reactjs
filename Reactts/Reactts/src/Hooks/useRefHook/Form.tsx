@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import type { FormEvent } from "react"
 
 
 type formData = {
@@ -20,7 +21,7 @@ const MyForm = () => {
   const password = useRef<HTMLInputElement>(null)
 
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         const nameValue = name.current!.value
